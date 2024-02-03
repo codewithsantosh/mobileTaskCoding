@@ -1,0 +1,81 @@
+.container {
+  background-color: black;
+  width: "100%";
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardContainer {
+  background-color: "#D3D3D3";
+  width: 600px;
+  height: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.freecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.freeText {
+  font-size: 28px;
+  font-weight: bold;
+}
+.middleCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #4e42f5, #7542f5, #427ef5);
+  height: 80px;
+  box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.dollarText{
+  font-size: 44px;
+  color: white;
+}
+.middleCardText{
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.buyButtonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buyButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 34px;
+  border-radius:20px ;
+  background: linear-gradient(to bottom right, #2b204d, #160f29, #13203a);
+}
+.buyText{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.bottomContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  padding-left: 30px;
+}
+.Text{
+  font-size: 10px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.diamond{
+  width: 15px;
+  height: 15px;
+  background-color: #427ef5;
+  transform: rotate(45deg);
+}
