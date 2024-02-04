@@ -7,16 +7,11 @@ const MobileCard = ({
   firstColor,
   middleColor,
   lastColor,
+  describe,
 }) => {
   return (
     <div>
-      <Card
-        style={{
-          width: 250,
-          height: 500,
-          borderRadius: 30,
-        }}
-      >
+      <Card className="card">
         <div className="freecontainer">
           <div className="freeText">{MobileName}</div>
         </div>
@@ -35,9 +30,24 @@ const MobileCard = ({
           <p className="dollarText">{price}</p>
         </div>
         <div className="middleCardText">
-          <div className="diamond"></div>
-          <div>
-            <div className="Text">this is real me 12 pro max mobile</div>
+          <div className="middleCardDiamond">
+            {describe.map((item, index) => (
+              <>
+                <div
+                  style={{
+                    backgroundColor: `${firstColor}`,
+                    width: 15,
+                    height: 15,
+                    transform: "rotate(45deg)",
+                    position: "relative",
+                    right: 20,
+                    top: 15,
+                  }}
+                ></div>
+
+                <div className="Text">{item.title}</div>
+              </>
+            ))}
           </div>
         </div>
         <div className="bottomContainer">
